@@ -23,13 +23,11 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "OrderDate",
@@ -38,14 +36,12 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "LineItemId",
@@ -54,13 +50,11 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "CustomerId",
@@ -69,13 +63,11 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "ProductId",
@@ -84,13 +76,11 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				},
 				{
 					"Name": "Quantity",
@@ -99,13 +89,11 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
-					}
+					},
+					"DeltaFormatInvalidMessages": []
 				}
 			],
 			"ColumnSetEntityName": "32dd1a63-ed72-40db-ac88-78657795863f",
@@ -117,8 +105,8 @@
 				"Properties": {
 					"path": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/RetailDB/SalesOrder/SalesOrder.csv",
 					"delimiter": ",",
-					"firstRowAsHeader": "false",
 					"multiLine": "false",
+					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"FormatTypeSetToDatabaseDefault": false,
 					"header": "false"
@@ -134,7 +122,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
