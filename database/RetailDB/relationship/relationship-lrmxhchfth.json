@@ -1,0 +1,26 @@
+{
+	"name": "relationship-lrmxhchfth",
+	"properties": {
+		"Name": "relationship-lrmxhchfth",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "RetailDB"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Customer",
+		"ToTableName": "SalesOrder",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "CustomerId",
+				"ToColumnName": "CustomerId"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "9509f85d-ae57-4bf6-9863-3e708b5ba2ca"
+	},
+	"type": "RELATIONSHIP"
+}
