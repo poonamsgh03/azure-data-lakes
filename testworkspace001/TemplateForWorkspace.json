@@ -160,7 +160,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "FirstName",
@@ -175,7 +176,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "LastName",
@@ -190,7 +192,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "EmailAddress",
@@ -205,7 +208,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "Phone",
@@ -220,7 +224,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "string"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									}
 								],
 								"ColumnSetEntityName": "2cc2a2d8-ba3e-4215-9721-f35e4d146eb3",
@@ -232,8 +237,8 @@
 									"Properties": {
 										"path": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/RetailDB/Customer",
 										"delimiter": ",",
-										"firstRowAsHeader": "false",
 										"multiLine": "false",
+										"firstRowAsHeader": "false",
 										"serialization.format": "1",
 										"escape": "\\",
 										"quote": "\"",
@@ -324,7 +329,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "ProductId"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ProductName",
@@ -343,7 +349,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "ProductName"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "IntroductionDate",
@@ -363,7 +370,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "IntroductionDate"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ActualAbandonmentDate",
@@ -383,7 +391,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "ActualAbandonmentDate"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ProductGrossWeight",
@@ -402,7 +411,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "ProductGrossWeight"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ItemSku",
@@ -421,7 +431,8 @@
 										"BaseAttributeReference": {
 											"Entity": "RetailProduct.cdm.json/RetailProduct",
 											"Name": "ItemSku"
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ListPrice",
@@ -436,7 +447,8 @@
 											"Properties": {
 												"HIVE_TYPE_STRING": "decimal"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									}
 								],
 								"ColumnSetEntityName": "06e775ee-61f4-45c1-8c30-f19905f1d1b5",
@@ -448,8 +460,8 @@
 									"Properties": {
 										"path": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/RetailDB/Product",
 										"delimiter": ",",
-										"firstRowAsHeader": "false",
 										"multiLine": "false",
+										"firstRowAsHeader": "false",
 										"serialization.format": "1",
 										"escape": "\\",
 										"quote": "\"",
@@ -531,13 +543,11 @@
 											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": false,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "OrderDate",
@@ -546,14 +556,12 @@
 											"TypeName": "timestamp",
 											"IsComplexType": false,
 											"IsNullable": true,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 												"HIVE_TYPE_STRING": "timestamp"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "LineItemId",
@@ -562,13 +570,11 @@
 											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": false,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "CustomerId",
@@ -577,13 +583,11 @@
 											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": true,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "ProductId",
@@ -592,13 +596,11 @@
 											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": false,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									},
 									{
 										"Name": "Quantity",
@@ -607,13 +609,11 @@
 											"TypeName": "long",
 											"IsComplexType": false,
 											"IsNullable": false,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
 											"Properties": {
 												"HIVE_TYPE_STRING": "long"
 											}
-										}
+										},
+										"DeltaFormatInvalidMessages": []
 									}
 								],
 								"ColumnSetEntityName": "32dd1a63-ed72-40db-ac88-78657795863f",
@@ -625,8 +625,8 @@
 									"Properties": {
 										"path": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/RetailDB/SalesOrder/SalesOrder.csv",
 										"delimiter": ",",
-										"firstRowAsHeader": "false",
 										"multiLine": "false",
+										"firstRowAsHeader": "false",
 										"serialization.format": "1",
 										"FormatTypeSetToDatabaseDefault": false,
 										"header": "false"
@@ -642,7 +642,7 @@
 								},
 								"Properties": {
 									"textinputformat.record.delimiter": ",",
-									"compression": "",
+									"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 									"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 								},
 								"Compressed": false,
@@ -734,204 +734,6 @@
 							"ObjectVersion": 1,
 							"ObjectId": "e0a270bc-e9eb-44a1-afc7-5345f457c365",
 							"Properties": {}
-						},
-						"Source": {
-							"Type": "SPARK"
-						}
-					}
-				]
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/testlakedb001')]",
-			"type": "Microsoft.Synapse/workspaces/databases",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"Ddls": [
-					{
-						"ActionType": "CREATE",
-						"OldEntity": null,
-						"NewEntity": {
-							"Name": "testlakedb001",
-							"EntityType": "DATABASE",
-							"Origin": {
-								"Type": "SPARK"
-							},
-							"Properties": {
-								"IsSyMSCDMDatabase": true
-							},
-							"Source": {
-								"Provider": "ADLS",
-								"Location": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/testlakedb001",
-								"Properties": {
-									"FormatType": "csv",
-									"LinkedServiceName": "testworkspace001-WorkspaceDefaultStorage"
-								}
-							},
-							"PublishStatus": "PUBLISHED",
-							"ObjectVersion": 2,
-							"ObjectId": "a18d7975-aa20-4e50-8688-f6cb08e00dcd"
-						},
-						"Source": {
-							"Type": "SPARK"
-						}
-					},
-					{
-						"ActionType": "CREATE",
-						"OldEntity": null,
-						"NewEntity": {
-							"Name": "Customers",
-							"EntityType": "TABLE",
-							"TableType": "EXTERNAL",
-							"Namespace": {
-								"SchemaName": null,
-								"DatabaseName": "testlakedb001",
-								"DatabaseId": null
-							},
-							"Partitioning": {
-								"PartitionFunctionType": null,
-								"Keys": null
-							},
-							"StorageDescriptor": {
-								"Distribution": null,
-								"Columns": [
-									{
-										"Name": "CustomerId",
-										"Description": null,
-										"OriginDataTypeName": {
-											"TypeName": "long",
-											"IsComplexType": false,
-											"IsNullable": false,
-											"Length": 0,
-											"Precision": 0,
-											"Scale": 0,
-											"Properties": {
-												"HIVE_TYPE_STRING": "long"
-											}
-										}
-									},
-									{
-										"Name": "FirstName",
-										"Description": "customer first name",
-										"OriginDataTypeName": {
-											"TypeName": "string",
-											"IsComplexType": false,
-											"IsNullable": false,
-											"Length": 256,
-											"Precision": 0,
-											"Scale": 0,
-											"Properties": {
-												"HIVE_TYPE_STRING": "string"
-											}
-										}
-									},
-									{
-										"Name": "LastName",
-										"Description": "customer last name",
-										"OriginDataTypeName": {
-											"TypeName": "string",
-											"IsComplexType": false,
-											"IsNullable": false,
-											"Length": 256,
-											"Precision": 0,
-											"Scale": 0,
-											"Properties": {
-												"HIVE_TYPE_STRING": "string"
-											}
-										}
-									},
-									{
-										"Name": "contactNo",
-										"Description": "",
-										"OriginDataTypeName": {
-											"TypeName": "string",
-											"IsComplexType": false,
-											"IsNullable": false,
-											"Length": 256,
-											"Precision": 0,
-											"Scale": 0,
-											"Properties": {
-												"HIVE_TYPE_STRING": "string"
-											}
-										}
-									},
-									{
-										"Name": "emailId",
-										"Description": "",
-										"OriginDataTypeName": {
-											"TypeName": "string",
-											"IsComplexType": false,
-											"IsNullable": false,
-											"Length": 256,
-											"Precision": 0,
-											"Scale": 0,
-											"Properties": {
-												"HIVE_TYPE_STRING": "string"
-											}
-										}
-									}
-								],
-								"ColumnSetEntityName": "21d3affa-e153-4a29-aa0a-6be51981b27c",
-								"Format": {
-									"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
-									"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
-									"FormatType": "csv",
-									"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
-									"Properties": {
-										"path": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/testlakedb001/Customers",
-										"delimiter": ",",
-										"firstRowAsHeader": "false",
-										"multiLine": "false",
-										"serialization.format": "1",
-										"escape": "\\",
-										"quote": "\"",
-										"FormatTypeSetToDatabaseDefault": true,
-										"header": "false"
-									}
-								},
-								"Source": {
-									"Provider": "ADLS",
-									"Location": "abfss://newfilesys001@straccountdatalake001.dfs.core.windows.net/testlakedb001/Customers",
-									"Properties": {
-										"LinkedServiceName": "testworkspace001-WorkspaceDefaultStorage",
-										"LocationSetToDatabaseDefault": true
-									}
-								},
-								"Properties": {
-									"textinputformat.record.delimiter": ",",
-									"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
-									"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
-								},
-								"Compressed": false,
-								"SerDeInfo": null,
-								"IsStoredAsSubdirectories": false
-							},
-							"Owner": null,
-							"CreateTime": 0,
-							"LastAccessTime": 0,
-							"Retention": 0,
-							"Temporary": false,
-							"IsRewriteEnabled": false,
-							"ViewOriginalText": null,
-							"ViewExpandedText": null,
-							"Origin": {
-								"Type": "SPARK"
-							},
-							"OriginObjectId": null,
-							"IsSharedEntity": false,
-							"PublishStatus": "PUBLISHED",
-							"Properties": {
-								"Description": "",
-								"DisplayFolderInfo": "{\"name\":\"Others\",\"colorCode\":\"\"}",
-								"PrimaryKeys": "CustomerId",
-								"spark.sql.sources.provider": "csv",
-								"spark.sql.sources.schema.numParts": "1",
-								"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"CustomerId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"FirstName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"LastName\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"contactNo\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}},{\"name\":\"emailId\",\"type\":\"string\",\"nullable\":false,\"metadata\":{}}]}"
-							},
-							"ObjectVersion": 1,
-							"ObjectId": "434ea7a1-954e-4201-97c6-0ff3f5dfa035",
-							"Description": ""
 						},
 						"Source": {
 							"Type": "SPARK"
